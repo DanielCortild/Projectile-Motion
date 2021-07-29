@@ -141,8 +141,6 @@ angle = 0
 
 # Run the code until a QUIT event
 while True:
-  draw_window(window, ball, shooting)
-
   # Move the ball (Or stop it) if shooting
   if shooting:
     if ball.y <= HEIGHT - ball.radius:
@@ -153,6 +151,8 @@ while True:
     else:
       shooting = False
       ball.y = START_Y
+
+  draw_window(window, ball, shooting)
 
   # Exit game if QUIT, start shot if MOUSEBUTTONDOWN
   for event in pygame.event.get():
