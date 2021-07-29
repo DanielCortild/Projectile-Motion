@@ -127,8 +127,9 @@ def get_angle(line):
 
   return angle
 
-# Initialize window and ball object
+# Initialize window, clock and ball object
 window = pygame.display.set_mode((WIDTH, HEIGHT))
+clock = pygame.time.Clock()
 ball = Ball(START_X, START_Y, RADIUS, WHITE)
 
 # Data about the ball
@@ -141,6 +142,8 @@ angle = 0
 
 # Run the code until a QUIT event
 while True:
+  clock.tick(200)
+  
   # Move the ball (Or stop it) if shooting
   if shooting:
     if ball.y <= HEIGHT - ball.radius:
