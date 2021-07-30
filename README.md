@@ -13,4 +13,4 @@ python3 main.py
 ## Run in GitPod
 You can run the code in GitPod, a free online dev environement for GitHub
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DanielCortild/PyGame_ProjectileMotion)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DanielCortild/Projectile-Motion)
